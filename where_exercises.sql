@@ -2,7 +2,7 @@ USE employees_db;
 -- All employees with first name Irena, Vidya, and Maya
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE first_name OR ('Irena', 'Vidya', 'Maya');
+WHERE first_name = ('Irena', 'Vidya', 'Maya');
 
 -- all employees whose name starts with E
 SELECT emp_no, first_name
